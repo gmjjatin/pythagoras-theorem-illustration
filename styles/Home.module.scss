@@ -126,7 +126,7 @@ $animationDelay: 1;
   max-width: 800px;
   @include fadeAnim(0);
   &.parent {
-    max-height: 557px;
+    max-height: 541px;
     width: -webkit-fill-available;
     overflow: auto;
     &::-webkit-scrollbar {

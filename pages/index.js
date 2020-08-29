@@ -41,7 +41,7 @@ export default function Home() {
               setTriplet([num3, num1, num2]);
               setError(false);
             } else {
-              setError('Not pythagoras triplet');
+              setError('Not a pythagorean triplet');
             }
           }
         }
@@ -103,7 +103,7 @@ export default function Home() {
               }
             }}
             className={`${styles.card} ${styles.button}`}>
-            {step === 'first' ? 'Check if they are pythagorean triplets' : step === 'third' ? 'Restart?' : 'Next'}
+            {step === 'first' ? 'Check how they are pythagorean triplets!' : step === 'third' ? 'Restart?' : 'Next'}
           </a>
         </div>
       )}
