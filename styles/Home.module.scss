@@ -13,6 +13,24 @@ $animationDelay: 1;
   }
 }
 
+@keyframes turnToBlue {
+  0% {
+    background-color: $light-color;
+  }
+  100% {
+    background-color: $primary-color;
+  }
+}
+
+@keyframes turnToBlack {
+  0% {
+    background-color: $light-color;
+  }
+  100% {
+    background-color: $dark-color;
+  }
+}
+
 @mixin fadeAnim($Offset) {
   animation-name: fade-in;
   animation-fill-mode: both;
@@ -109,6 +127,7 @@ $animationDelay: 1;
   @include fadeAnim(0);
   &.parent {
     max-height: 557px;
+    width: -webkit-fill-available;
     overflow: auto;
     &::-webkit-scrollbar {
       width: 10px;
@@ -126,12 +145,44 @@ $animationDelay: 1;
   &.flexColumn {
     flex-direction: column;
     margin: 0 1em;
+    h5 span {
+      @include fadeAnim(2);
+    }
     .grid {
       margin: 1px;
       a {
         margin: 0;
       }
     }
+  }
+  &.four {
+    a {
+      background-color: $light-color;
+    }
+  }
+
+  &.base {
+    left: 72px;
+    position: relative;
+    width: max-content;
+    a {
+      margin: 1px;
+    }
+  }
+  &.hypotenuse {
+    position: absolute;
+    left: 64px;
+    top: -9px;
+    transform-origin: top;
+  }
+  .triangleContainer {
+    position: relative;
+    width: 108px;
+    margin-top: 2em;
+    animation-name: fade-in;
+    animation-fill-mode: both;
+    animation-duration: #{$animationDelay}s;
+    animation-delay: 6s;
   }
 
   h5 {
@@ -159,6 +210,19 @@ $animationDelay: 1;
     border-color: $primary-color;
   }
   @include fadeAnim(1);
+
+  &.turnBlack {
+    animation-name: turnToBlack;
+    animation-fill-mode: both;
+    animation-duration: #{$animationDelay}s;
+    animation-delay: #{$animationDelay + 1}s;
+  }
+  &.turnBlue {
+    animation-name: turnToBlue;
+    animation-fill-mode: both;
+    animation-duration: #{$animationDelay}s;
+    animation-delay: #{$animationDelay + 4}s;
+  }
   h3 {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;

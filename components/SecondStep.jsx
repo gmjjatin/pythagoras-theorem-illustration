@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss';
 export default function Second({ triplet }) {
   return (
     <>
-      <div className={`${styles.grid} ${styles.flexColumn}`}>
+      <div className={`${styles.grid} ${styles.flexColumn}`} title={`${triplet[0]} square dots`}>
         <h5>
           {triplet[0]}x{triplet[0]} = {triplet[0] ** 2}
         </h5>
@@ -19,7 +19,7 @@ export default function Second({ triplet }) {
           </div>
         ))}
       </div>
-      <div className={`${styles.grid} ${styles.flexColumn}`}>
+      <div className={`${styles.grid} ${styles.flexColumn}`} title={`${triplet[1]} square dots`}>
         <h5>
           {triplet[1]}x{triplet[1]} = {triplet[1] ** 2}
         </h5>
@@ -34,7 +34,7 @@ export default function Second({ triplet }) {
           </div>
         ))}
       </div>
-      <div className={`${styles.grid} ${styles.flexColumn}`}>
+      <div className={`${styles.grid} ${styles.flexColumn}`} title={`${triplet[2]} square dots`}>
         <h5>
           {triplet[2]}x{triplet[2]} = {triplet[2] ** 2}
         </h5>

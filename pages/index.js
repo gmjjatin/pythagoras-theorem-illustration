@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.scss';
 import FirstStep from '../components/FirstStep';
 import SecondStep from '../components/SecondStep';
+import ThirdStep from '../components/ThirdStep';
 
 export default function Home() {
   const router = useRouter();
@@ -73,6 +74,7 @@ export default function Home() {
           <div className={`${styles.grid} ${styles.parent}`}>
             {step === 'first' && <FirstStep triplet={triplet} />}
             {step === 'second' && <SecondStep triplet={triplet} />}
+            {step === 'third' && <ThirdStep triplet={triplet} />}
           </div>
         )}
         {error && (
