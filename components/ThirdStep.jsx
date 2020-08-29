@@ -23,13 +23,15 @@ export default function Third({ triplet }) {
               return (
                 <a
                   title={`${
-                    count <= triplet[0] ** 2
-                      ? triplet[0] + 'x' + triplet[0] + ' black'
-                      : triplet[1] + 'x' + triplet[1] + ' blue'
+                    i < triplet[1] && j < triplet[1]
+                      ? triplet[1] + 'x' + triplet[1] + ' blue'
+                      : triplet[0] + 'x' + triplet[0] + ' black'
                   } dots`}
                   key={i}
                   href="#"
-                  className={`${styles.card} ${count <= triplet[0] ** 2 ? styles.turnBlack : styles.turnBlue}`}></a>
+                  className={`${styles.card} ${
+                    i < triplet[1] && j < triplet[1] ? styles.turnBlue : styles.turnBlack
+                  }`}></a>
               );
             })}
           </div>

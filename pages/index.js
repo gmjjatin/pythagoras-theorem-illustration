@@ -103,7 +103,7 @@ export default function Home() {
               }
             }}
             className={`${styles.card} ${styles.button}`}>
-            {step === 'third' ? 'Restart?' : 'Next'}
+            {step === 'first' ? 'Check if they are pythagorean triplets' : step === 'third' ? 'Restart?' : 'Next'}
           </a>
         </div>
       )}
