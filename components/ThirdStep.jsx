@@ -36,12 +36,12 @@ export default function Third({ triplet }) {
         ))}
       </div>
       <div className={styles.triangleContainer}>
-        <div className={`${styles.grid} ${styles.flexColumn}`} title="height of triangle">
+        <div className={`${styles.grid} ${styles.flexColumn}`} title={`height of triangle = ${triplet[1]} dots`}>
           {[...Array(triplet[1])].map((v, i) => (
             <a key={i} href="#" className={`${styles.card} ${styles.blue}`}></a>
           ))}
         </div>
-        <div className={`${styles.grid} ${styles.base}`} title="base of triangle">
+        <div className={`${styles.grid} ${styles.base}`} title={`base of triangle = ${triplet[0]} dots`}>
           {[...Array(triplet[0])].map((v, i) => (
             <a key={i} href="#" className={`${styles.card} ${styles.black}`}></a>
           ))}
@@ -49,7 +49,7 @@ export default function Third({ triplet }) {
         <div
           style={{ transform: `rotate(${-1 * Math.asin(triplet[0] / triplet[2])}rad)` }}
           className={`${styles.grid} ${styles.hypotenuse}`}
-          title="hypotenuse of triangle">
+          title={`hypotenuse of triangle = ${triplet[2]} dots`}>
           {[...Array(triplet[2])].map((v, i) => (
             <a key={i} href="#" className={`${styles.card} ${styles.grey}`}></a>
           ))}
