@@ -5,12 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "dotenv -- cross-var next start --port %PORT%"
   },
   "dependencies": {
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^3.2.0",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "cypress": "^5.0.0"
   }
 }
