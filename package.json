@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "dotenv -- cross-var next start --port %PORT%"
+    "start": "dotenv -- cross-var next start --port %PORT%",
+    "test": "cypress open"
   },
   "dependencies": {
     "cross-var": "^1.1.0",

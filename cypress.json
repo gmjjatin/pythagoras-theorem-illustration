@@ -1,0 +1,6 @@
+{
+  "projectId": "128076ed-9868-4e98-9cef",
+  "baseUrl": "http://localhost:3000",
+  "chromeWebSecurity": false,
+  "pageLoadTimeout": 120000
+}
