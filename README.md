@@ -22,3 +22,7 @@ docker run -p 3000:3000 -it cerebry
 ## Run test
 
 - Make sure you have it running on localhost:3000 , before running test
+
+```
+npm run test
+```
