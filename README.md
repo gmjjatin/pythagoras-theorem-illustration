@@ -1,3 +1,6 @@
+## TLDR
+This project helps to dynamically create pythogoras triangle, if the input is a pythorgoras triplet.
+
 ## Getting Started
 
 First, run the development server:
