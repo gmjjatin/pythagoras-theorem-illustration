@@ -5,6 +5,8 @@ Its has following type of UI ->
 2. Boxes arranged in right-angled triangle formed
 3. One box === One unit of length
 
+It uses html5,css3.
+
 ## Getting Started
 
 First, run the development server:
