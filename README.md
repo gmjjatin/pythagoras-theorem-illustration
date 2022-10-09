@@ -1,6 +1,6 @@
 ## TLDR
 This project helps to dynamically create pythogoras triangle, if the input is a pythorgoras triplet.
-Its has following type of UI ->
+Its has following type of UI->
 1. Boxes representing each side of triangle
 2. Boxes arranged in right-angled triangle formed
 3. One box === One unit of length
